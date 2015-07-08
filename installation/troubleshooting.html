@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Resolvendo Problemas : Guia do Usuário CodeIgniter</title>
+<link rel="icon" type="image/png" href="../images/ci-icon.png" />
+
+<style type='text/css' media='all'>@import url('../userguide.css');</style>
+<link rel='stylesheet' type='text/css' media='all' href='../userguide.css' />
+
+<script type="text/javascript" src="../nav/nav.js"></script>
+<script type="text/javascript" src="../nav/prototype.lite.js"></script>
+<script type="text/javascript" src="../nav/moo.fx.js"></script>
+<script type="text/javascript" src="../nav/user_guide_menu.js"></script>
+
+<meta http-equiv='expires' content='-1' />
+<meta http-equiv= 'pragma' content='no-cache' />
+<meta name='robots' content='all' />
+<meta name='author' content='ExpressionEngine Dev Team' />
+<meta name='description' content='Guia do Usuário CodeIgniter' />
+
+</head>
+<body>
+
+<!-- START NAVIGATION -->
+<div id="nav"><div id="nav_inner"><script type="text/javascript">create_menu('../');</script></div></div>
+<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle_darker.jpg" width="154" height="43" border="0" title="Mostrar Tabela de Conteúdos" alt="Tabela de Conteúdos" /></a></div>
+<div id="masthead">
+<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+<tr>
+<td><h1>Guia do Usuário CodeIgniter Versão 2.2.2</h1></td>
+<td id="breadcrumb_right"><a href="../toc.html">Índice de Páginas</a></td>
+</tr>
+</table>
+</div>
+<!-- END NAVIGATION -->
+
+
+<!-- START BREADCRUMB -->
+<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+<tr>
+<td id="breadcrumb">
+<a href="http://codeigniter.com/">CodeIgniter</a> &nbsp;&#8250;&nbsp;
+<a href="../index.html">Home do Guia do Usuário</a> &nbsp;&#8250;&nbsp;
+Resolvendo Problemas
+</td>
+<td id="searchbox"><form method="get" action="http://www.google.com/search"><input type="hidden" name="as_sitesearch" id="as_sitesearch" value="codeigniter.com/user_guide/" />Pesquisar no Guia do Usuário&nbsp; <input type="text" class="input" style="width:200px;" name="q" id="q" size="31" maxlength="255" value="" />&nbsp;<input type="submit" class="submit" name="sa" value="Pesquisar" /></form></td>
+</tr>
+</table>
+<!-- END BREADCRUMB -->
+
+<br clear="all" />
+
+
+<!-- START CONTENT -->
+<div id="content">
+
+<h1>Resolvendo Problemas</h1>
+
+<p>Se descobrir que, não importa o que você coloque em sua URL, apenas a página default está sendo carregada, é bem provável de que seu servidor não suporte a variável PATH_INFO necessária para gerar URLs amigáveis aos motores de busca. Como primeiro passo, abra seu arquivo <dfn>application/config/config.php</dfn> e procure as informações de <kbd>URI Protocol</kbd>.  É recomendado que você experimente um par de alternativa de configurações. Se ele ainda não funcionar depois de você ter experimentado isso, você precisará forçar o Mercante a adicionar um sinal de interrogação em suas URLs. Para fazer isto abra seu arquivo <kbd>application/config/config.php</kbd> e mude isto:</p>
+
+<code>$config['index_page'] = "index.php";</code>
+
+<p>Para isto:</p>
+
+<code>$config['index_page'] = "index.php?";</code>
+
+
+</div>
+<!-- END CONTENT -->
+
+
+<div id="footer">
+<p>
+Tópico Anterior:&nbsp;&nbsp;<a href="upgrading.html">Atualizando de uma Versão Anterior</a>
+&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+<a href="#top">Topo da Página</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+<a href="../index.html">Home do Guia do Usuário</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+Próximo Tópico:&nbsp;&nbsp;<a href="../overview/getting_started.html">Primeiros Passos</a>
+</p>
+<p><a href="http://codeigniter.com">CodeIgniter</a> &nbsp;&middot;&nbsp; Copyright &#169; 2006 - 2014 &nbsp;&middot;&nbsp; <a href="http://ellislab.com/">EllisLab, Inc.</a> &nbsp;&middot;&nbsp; Copyright &#169; 2014 - 2015 &nbsp;&middot;&nbsp; <a href="http://bcit.ca/">British Columbia Institute of Technology</a></p>
+</div>
+
+</body>
+</html>
