@@ -1,9 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Application Flow Chart : CodeIgniter User Guide</title>
+<title>Fluxograma da Aplicação : Guia do Usuário CodeIgniter</title>
+<link rel="icon" type="image/png" href="../images/ci-icon.png" />
 
 <style type='text/css' media='all'>@import url('../userguide.css');</style>
 <link rel='stylesheet' type='text/css' media='all' href='../userguide.css' />
@@ -17,19 +18,19 @@
 <meta http-equiv= 'pragma' content='no-cache' />
 <meta name='robots' content='all' />
 <meta name='author' content='ExpressionEngine Dev Team' />
-<meta name='description' content='CodeIgniter User Guide' />
+<meta name='description' content='Guia do Usuário CodeIgniter' />
 
 </head>
 <body>
 
 <!-- START NAVIGATION -->
 <div id="nav"><div id="nav_inner"><script type="text/javascript">create_menu('../');</script></div></div>
-<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle_darker.jpg" width="154" height="43" border="0" title="Toggle Table of Contents" alt="Toggle Table of Contents" /></a></div>
+<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle_darker.jpg" width="154" height="43" border="0" title="Mostrar Tabela de Conteúdos" alt="Tabela de Conteúdos" /></a></div>
 <div id="masthead">
 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
 <tr>
-<td><h1>CodeIgniter User Guide Version 2.2.2</h1></td>
-<td id="breadcrumb_right"><a href="../toc.html">Table of Contents Page</a></td>
+<td><h1>Guia do Usuário CodeIgniter Versão 2.2.2</h1></td>
+<td id="breadcrumb_right"><a href="../toc.html">Índice de Páginas</a></td>
 </tr>
 </table>
 </div>
@@ -40,11 +41,11 @@
 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
 <tr>
 <td id="breadcrumb">
-<a href="http://codeigniter.com/">CodeIgniter Home</a> &nbsp;&#8250;&nbsp;
-<a href="../index.html">User Guide Home</a> &nbsp;&#8250;&nbsp;
-Appflow
+<a href="http://codeigniter.com/">CodeIgniter</a> &nbsp;&#8250;&nbsp;
+<a href="../index.html">Home do Guia do Usuário</a> &nbsp;&#8250;&nbsp;
+Fluxograma da Aplicação
 </td>
-<td id="searchbox"><form method="get" action="http://www.google.com/search"><input type="hidden" name="as_sitesearch" id="as_sitesearch" value="codeigniter.com/user_guide/" />Search User Guide&nbsp; <input type="text" class="input" style="width:200px;" name="q" id="q" size="31" maxlength="255" value="" />&nbsp;<input type="submit" class="submit" name="sa" value="Go" /></form></td>
+<td id="searchbox"><form method="get" action="http://www.google.com/search"><input type="hidden" name="as_sitesearch" id="as_sitesearch" value="codeigniter.com/user_guide/" />Pesquisar no Guia do Usuário&nbsp; <input type="text" class="input" style="width:200px;" name="q" id="q" size="31" maxlength="255" value="" />&nbsp;<input type="submit" class="submit" name="sa" value="Pesquisar" /></form></td>
 </tr>
 </table>
 <!-- END BREADCRUMB -->
@@ -56,21 +57,20 @@ Appflow
 <div id="content">
 
 
-<h1>Application Flow Chart</h1>
+<h1>Fluxograma da Aplicação</h1>
 
-<p>The following graphic illustrates how data flows throughout the system:</p>
+<p>A imagem abaixo ilustra como é o fluxo de dados através do sistema:</p>
 
-<div><img src="../images/appflowchart.gif" width="769" height="212" alt="CodeIgniter application flow"></div>
+<div><img src="../images/appflowchart.gif" width="800" height="242" alt="CodeIgniter application flow"></div>
 
 
 <ol>
-<li>The index.php serves as the front controller, initializing the base resources needed to run CodeIgniter.</li>
-<li>The Router examines the HTTP request to determine what should be done with it.</li>
-<li>If a cache file exists, it is sent directly to the browser, bypassing the normal system execution.</li>
-<li>Security.  Before the application controller is loaded, the HTTP request and any user submitted data is filtered for security.</li>
-<li>The Controller loads the model, core libraries, helpers, and any other resources needed to process the specific request.</li>
-<li>The finalized View is rendered then sent to the web browser to be seen. If caching is enabled, the view is cached first so
-that on subsequent requests it can be served.</li>
+<li>O index.php serve como um controlador primário, iniciando os recursos básicos necessários para rodar o CodeIgniter.</li>
+<li>O roteador examina a requisição HTTP para determinar o que deve ser feito com ela.</li>
+<li>Se já existem o arquivo "cacheado", ele é enviado diretamente ao browser, pulando as outras etapas de execução.</li>
+<li>Segurança. Antes do controller de aplicação ser carregado, a requisição HTTP e qualquer dado submetido pelo usuário é filtrado por segurança.</li>
+<li>O Controller carrega o model as bibliotecas principais, plugins, helpers e qualquer outro recurso necessário para processar a requisição específica.</li>
+<li>A View finalizada é renderizada e então enviada ao browser para ser vista. Se o cache está habilitado, a view é "cacheada" primeiro para que seja servida em requisições subsequentes.</li>
 </ol>
 
 
@@ -82,11 +82,11 @@ that on subsequent requests it can be served.</li>
 
 <div id="footer">
 <p>
-Previous Topic:&nbsp;&nbsp;<a href="features.html">CodeIgniter Features</a>
+Tópico Anterior:&nbsp;&nbsp;<a href="features.html">Recursos Suportados</a>
 &nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-<a href="#top">Top of Page</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-<a href="../index.html">User Guide Home</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-Next Topic:&nbsp;&nbsp;<a href="mvc.html">Model-View-Controller</a>
+<a href="#top">Topo da Página</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+<a href="../index.html">Home do Guia do Usuário</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+Próximo Tópico:&nbsp;&nbsp;<a href="mvc.html">Model-View-Controller</a>
 </p>
 <p><a href="http://codeigniter.com">CodeIgniter</a> &nbsp;&middot;&nbsp; Copyright &#169; 2006 - 2014 &nbsp;&middot;&nbsp; <a href="http://ellislab.com/">EllisLab, Inc.</a> &nbsp;&middot;&nbsp; Copyright &#169; 2014 - 2015 &nbsp;&middot;&nbsp; <a href="http://bcit.ca/">British Columbia Institute of Technology</a></p>
 </div>

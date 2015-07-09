@@ -27,7 +27,7 @@ function create_menu(basepath)
 			'<li><a href="'+base+'installation/troubleshooting.html">Resolvendo Problemas</a></li>' +
 		'</ul>' +
 
-		'<h3>Introdução</h3>' +
+		'<a href="'+base+'overview/index.html"><h3>Introdução</h3></a>' +
 		'<ul>' +
 			'<li><a href="'+base+'overview/getting_started.html">Primeiros Passos</a></li>' +
 			'<li><a href="'+base+'overview/at_a_glance.html">Visão Geral do CodeIgniter</a></li>' +
