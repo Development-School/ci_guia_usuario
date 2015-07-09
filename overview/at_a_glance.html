@@ -1,9 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CodeIgniter at a Glance : CodeIgniter User Guide</title>
+<title>Visão Geral do CodeIgniter : Guia do Usuário CodeIgniter</title>
+<link rel="icon" type="image/png" href="../images/ci-icon.png" />
 
 <style type='text/css' media='all'>@import url('../userguide.css');</style>
 <link rel='stylesheet' type='text/css' media='all' href='../userguide.css' />
@@ -17,19 +18,19 @@
 <meta http-equiv= 'pragma' content='no-cache' />
 <meta name='robots' content='all' />
 <meta name='author' content='ExpressionEngine Dev Team' />
-<meta name='description' content='CodeIgniter User Guide' />
+<meta name='description' content='Guia do Usuário CodeIgniter' />
 
 </head>
 <body>
 
 <!-- START NAVIGATION -->
 <div id="nav"><div id="nav_inner"><script type="text/javascript">create_menu('../');</script></div></div>
-<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle_darker.jpg" width="154" height="43" border="0" title="Toggle Table of Contents" alt="Toggle Table of Contents" /></a></div>
+<div id="nav2"><a name="top"></a><a href="javascript:void(0);" onclick="myHeight.toggle();"><img src="../images/nav_toggle_darker.jpg" width="154" height="43" border="0" title="Mostrar Tabela de Conteúdos" alt="Tabela de Conteúdos" /></a></div>
 <div id="masthead">
 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
 <tr>
-<td><h1>CodeIgniter User Guide Version 2.2.2</h1></td>
-<td id="breadcrumb_right"><a href="../toc.html">Table of Contents Page</a></td>
+<td><h1>Guia do Usuário CodeIgniter Versão 2.2.2</h1></td>
+<td id="breadcrumb_right"><a href="../toc.html">Índice de Páginas</a></td>
 </tr>
 </table>
 </div>
@@ -40,11 +41,11 @@
 <table cellpadding="0" cellspacing="0" border="0" style="width:100%">
 <tr>
 <td id="breadcrumb">
-<a href="http://codeigniter.com/">CodeIgniter Home</a> &nbsp;&#8250;&nbsp;
-<a href="../index.html">User Guide Home</a> &nbsp;&#8250;&nbsp;
-What is CodeIgniter?
+<a href="http://codeigniter.com/">CodeIgniter</a> &nbsp;&#8250;&nbsp;
+<a href="../index.html">Home do Guia do Usuário</a> &nbsp;&#8250;&nbsp;
+Visão Geral
 </td>
-<td id="searchbox"><form method="get" action="http://www.google.com/search"><input type="hidden" name="as_sitesearch" id="as_sitesearch" value="codeigniter.com/user_guide/" />Search User Guide&nbsp; <input type="text" class="input" style="width:200px;" name="q" id="q" size="31" maxlength="255" value="" />&nbsp;<input type="submit" class="submit" name="sa" value="Go" /></form></td>
+<td id="searchbox"><form method="get" action="http://www.google.com/search"><input type="hidden" name="as_sitesearch" id="as_sitesearch" value="codeigniter.com/user_guide/" />Pesquisar no Guia do Usuário&nbsp; <input type="text" class="input" style="width:200px;" name="q" id="q" size="31" maxlength="255" value="" />&nbsp;<input type="submit" class="submit" name="sa" value="Pesquisar" /></form></td>
 </tr>
 </table>
 <!-- END BREADCRUMB -->
@@ -55,56 +56,44 @@ What is CodeIgniter?
 <!-- START CONTENT -->
 <div id="content">
 
-<h1>CodeIgniter at a Glance</h1>
+<h1>Visão Geral do CodeIgniter</h1>
 
 
-<h2>CodeIgniter is an Application Framework</h2>
+<h2>O CodeIgniter é uma Aplicação Frameworks</h2>
 
-<p>CodeIgniter is a toolkit for people who build web applications using PHP.  Its goal is to enable you to develop projects much faster than you could if you were writing code
-from scratch, by providing a rich set of libraries for commonly needed tasks, as well as a simple interface and
-logical structure to access these libraries. CodeIgniter lets you creatively focus on your project by
-minimizing the amount of code needed for a given task.</p>
+<p>CodeIgniter é um kit de ferramentas para quem constrói aplicações web usando PHP. Seu objetivo é que você possa desenvolver projetos muito mais rápido do que você poderia se você estivesse escrevendo código a partir do zero, proporcionando um rico conjunto de bibliotecas para as tarefas mais comuns, bem como uma interface simples e estrutura lógica para acessar essas bibliotecas. CodeIgniter permite que você mantenha o foco em seu projeto minimizando a quantidade de código necessário para realizar uma tarefa.</p>
 
-<h2>CodeIgniter is Free</h2>
-<p>CodeIgniter is licensed under an Apache/BSD-style open source license so you can use it however you please.
-For more information please read the <a href="../license.html">license agreement</a>.</p>
+<h2>O CodeIgniter é gratuito</h2>
+<p>O CodeIgniter é disponibilizado sob uma licença de código aberto no estilo da Apache/BSD. Sendo assim, você pode utilizá-lo como desejar. Para mais informações, por favor leia a <a href="../license.html">Licença de Uso</a>.</p>
 
-<h2>CodeIgniter is Light Weight</h2>
-<p>Truly light weight.  The core system requires only a few very small libraries. This is in stark contrast to many frameworks that require significantly more resources.
-Additional libraries are loaded dynamically upon request, based on your needs for a given process, so the base system
-is very lean and quite fast.
+<h2>CodeIgniter é muito leve</h2>
+<p>
+Verdadeiramente levíssimo. O núcleo do sistema requer apenas algumas pequeníssimas bibliotecas. Isto é um contraste gritante com muitos frameworks que requerem significativamente mais recursos. Bibliotecas adicionais são carregadas dinamicamente a pedido, com base em necessidades de um determinado processo do seu aplicativo, de modo que o sistema básico é enxuto e bem rápido.
 </p>
 
-<h2>CodeIgniter is Fast</h2>
-<p>Really fast. We challenge you to find a framework that has better performance than CodeIgniter.</p>
+<h2>CodeIgniter é rápido</h2>
+<p>Extremamente rápido. Nós o desafiamos a encontrar um framework que tem melhor desempenho do que o CodeIgniter.</p>
 
 
-<h2>CodeIgniter Uses M-V-C</h2>
-<p>CodeIgniter uses the Model-View-Controller approach, which allows great separation between logic and presentation.
-This is particularly good for projects in which designers are working with your template files, as the code these file contain will be minimized. We describe MVC in more detail on its own page.</p>
+<h2>O CodeIgniter Usa M-V-C</h2>
+<p>O CodeIgniter usa a abordagem Modelo-Visão-Controlador, que permite grande separação entre lógica e apresentação. Esta particularidade é boa para projetos que são desenhados para trabalhar com arquivos de modelos, como os códigos que aqueles arquivos contém serão minimizados. Nós descrevemos o MVC em mais detalhes em sua própria página.</p>
 
-<h2>CodeIgniter Generates Clean URLs</h2>
-<p>The URLs generated by CodeIgniter are clean and search-engine friendly.  Rather than using the standard "query string"
-approach to URLs that is synonymous with dynamic systems, CodeIgniter uses a segment-based approach:</p>
+<h2>O CodeIgniter Gera URLs Limpas</h2>
+<p>As URLs geradas pelo CodeIgniter são limpas e amigáveis aos motores de busca. No lugar de usar a abordagem padrão "query string" para as URLs que é sinônimo de sistemas dinâmicos, CodeIgniter usa uma abordagem baseada em segmentos:</p>
 
-<code>example.com/<var>news</var>/<dfn>article</dfn>/<samp>345</samp></code>
+<code>exemplo.com/<var>noticias</var>/<dfn>artigo</dfn>/<samp>345</samp></code>
 
-<p>Note: By default the index.php file is included in the URL but it can be removed using a simple .htaccess file.</p>
+<p>Nota: Por padrão o arquivo index.php é incluído na URL mas ele pode ser removido usando um simples arquivo .htaaccess.</p>
 
-<h2>CodeIgniter Packs a Punch</h2>
-<p>CodeIgniter comes with  full-range of libraries that enable the most commonly needed web development tasks,
-like accessing a database, sending email, validating form data, maintaining sessions, manipulating images, working with XML-RPC data and
-much more.</p>
+<h2>O CodeIgniter vem Recheado de Coisas</h2>
+<p>O CodeIgniter vem com uma grande variedade de bibliotecas que abrange a maioria das tarefas do desenvolvimento web, como acesso a um banco de dados, mandar e-mail, validar dados de um formulário, manter sessões, manipular imagens, trabalhar com dados XML-RPC e muito mais.</p>
 
-<h2>CodeIgniter is Extensible</h2>
-<p>The system can be easily extended through the use of your own libraries, helpers, or through class extensions or system hooks.</p>
+<h2>O CodeIgniter é Extensível</h2>
+<p>O sistema pode ser facilmente estendido através do uso de suas próprias bibliotecas, Helpers, ou através de classe extensões ou ganchos de sistema.</p>
 
 
-<h2>CodeIgniter Does Not Require a Template Engine</h2>
-<p>Although CodeIgniter <em>does</em> come with a simple template parser that can be optionally used, it does not force you to use one.
-
-Template engines simply can not match the performance of native PHP, and the syntax that must be learned to use a template
-engine is usually only marginally easier than learning the basics of PHP.  Consider this block of PHP code:</p>
+<h2>O CodeIgniter Não requer um Gerador de Templates</h2>
+<p>Embora o CodeIgniter <em>venha</em> com um simples interpretador de templates, opcional, ele não lhe força a usar um. Geradores de template simplesmente não alcançam a performance do PHP nativo, e a sintaxe que precisar ser aprendida para usá-los é geralmente um pouco mais fácil que aprender os básicos do PHP. Considere este bloco de código PHP:</p>
 
 <code>&lt;ul><br />
 <br />
@@ -116,7 +105,7 @@ engine is usually only marginally easier than learning the basics of PHP.  Consi
 <br />
 &lt;/ul></code>
 
-<p>Contrast this with the pseudo-code used by a template engine:</p>
+<p>Compare com este pseudo-código usado por um gerador de templates:</p>
 
 <code>&lt;ul><br />
 <br />
@@ -128,19 +117,16 @@ engine is usually only marginally easier than learning the basics of PHP.  Consi
 <br />
 &lt;/ul></code>
 
-<p>Yes, the template engine example is a bit cleaner, but it comes at the price of performance, as the pseudo-code must be converted
-back into PHP to run. Since one of our goals is <em>maximum performance</em>, we opted to not require the use of a template engine.</p>
+<p>Sim, o segundo exemplo é um pouco mais claro, mas ele cobra seu preço na performance, pois um pseudo-código precisa ser convertido novamente em PHP pra rodar. Como um de nossos objetiso é <em>performance máxima</em>, optamos por não requerer o uso de um gerador de templates.</p>
 
 
-<h2>CodeIgniter is Thoroughly Documented</h2>
-<p>Programmers love to code and hate to write documentation.  We're no different, of course, but
-since documentation is <strong>as important</strong> as the code itself,
-we are committed to doing it. Our source code is extremely clean and well commented as well.</p>
+<h2>O CodeIgniter é Exaustivamente Documentedo</h2>
+<p>Programadores adoram codificar e odeiam documentar o que fazem. Nós não somos diferentes, é claro, mas como a documentação é <strong>tão importante</strong> que o código propriamente dito, somos dedicados em fazê-lo. Nosso código fonte é extremamente limpo e também bem documentado.</p>
 
 
-<h2>CodeIgniter has a Friendly Community of Users</h2>
+<h2>O CodeIgniter tem uma Comunidade de Usuários Amigável</h2>
 
-<p>Our growing community of users can be seen actively participating in our <a href="http://forum.codeigniter.com/">Community Forums</a>.</p>
+<p>Nossa crescente comunidade de usuários pode ser vista participando ativamente em nosso <a href="http://forum.codeigniter.com/">Fórum da Comunidade</a>.</p>
 
 
 </div>
@@ -149,11 +135,11 @@ we are committed to doing it. Our source code is extremely clean and well commen
 
 <div id="footer">
 <p>
-Previous Topic:&nbsp;&nbsp;<a href="getting_started.html">Getting Started</a>
+Tópico Anterior:&nbsp;&nbsp;<a href="getting_started.html">Primeiros Passos</a>
 &nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-<a href="#top">Top of Page</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-<a href="../index.html">User Guide Home</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-Next Topic:&nbsp;&nbsp;<a href="cheatsheets.html">CodeIgniter Cheatsheets</a>
+<a href="#top">Topo da Página</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+<a href="../index.html">Home do Guia do Usuário</a>&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+Próximo Tópico:&nbsp;&nbsp;<a href="cheatsheets.html">Referências Rápidas</a>
 </p>
 <p><a href="http://codeigniter.com">CodeIgniter</a> &nbsp;&middot;&nbsp; Copyright &#169; 2006 - 2014 &nbsp;&middot;&nbsp; <a href="http://ellislab.com/">EllisLab, Inc.</a> &nbsp;&middot;&nbsp; Copyright &#169; 2014 - 2015 &nbsp;&middot;&nbsp; <a href="http://bcit.ca/">British Columbia Institute of Technology</a></p>
 </div>
